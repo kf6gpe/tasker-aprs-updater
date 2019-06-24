@@ -1,4 +1,7 @@
-# A simple script to update APRSIS.
+# A simple Tasker script to update APRSIS
+
+You must have an amateur radio license to use this script.
+
 
 Installation:
 1.  Install [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US).
