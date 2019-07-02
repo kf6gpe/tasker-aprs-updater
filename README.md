@@ -14,4 +14,4 @@ Installation:
    - Set `passcode` to the passcode for your callsign. (This script will not work without a valid passcode!)
 1. Add the following tasks to your profile:
    - A1. Get Location - Source Any - Timeout 20 - Continue Task Immediately Off - Keep Tracking Off
-   - A2. JavaScripter - Code should be the contents of your modified update-aprs.js - No libraries - Exit Off - Timeout (Seconds) 45 - Continue Task after Error On
+   - A2. JavaScriptlet - Code should be the contents of your modified update-aprs.js - No libraries - Exit Off - Timeout (Seconds) 45 - Continue Task after Error On
