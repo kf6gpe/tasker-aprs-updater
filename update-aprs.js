@@ -4,7 +4,7 @@ var url = 'http://www.lothlorien.com/post-aprs.php';
 
 // Configure these for your callsign, SSID, passcode, and optional status message.
 var callsign = 'KF6GPE-9'; // Replace with your call & SSID
-var passcode = '-1';       // Replace with your passcode
+var passcode = '24230';       // Replace with your passcode
 
 // Replace the following with an optional status string.
 var info = 'Internet | @kf6gpe / kf6gpe.org';
