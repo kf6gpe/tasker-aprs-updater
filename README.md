@@ -12,9 +12,10 @@ Installation:
    - Set `url` to the URL where you've installed `post-aprs.php`.
    - Set `callsign` the callsign and SSID of the station you'd like to have positions updated.
    - Set `passcode` to the passcode for your callsign. (This script will not work without a valid passcode!)
-1. Do one of the following:
-  1. To beacon periodically regardless of changes in position, dd the following task actions to your profile:
-     - A1. Get Location - Source Any - Timeout 20 - Continue Task Immediately Off - Keep Tracking Off
-     - A2. JavaScripter - Code should be the contents of your modified update-aprs.js - No libraries - Exit Off - Timeout (Seconds) 45 - Continue Task after Error On
-  2. If you'd like to beacon only when your position changes, you can use the Tasker script AC6SL's created, available in this repository in [tasker-script.tsk.xml](tasker-script.tsk.xml).
+
+Then, do one of the following:
+1. To beacon periodically regardless of changes in position, dd the following task actions to your profile:
+   - A1. Get Location - Source Any - Timeout 20 - Continue Task Immediately Off - Keep Tracking Off
+   - A2. JavaScripter - Code should be the contents of your modified update-aprs.js - No libraries - Exit Off - Timeout (Seconds) 45 - Continue Task after Error On
+2. If you'd like to beacon only when your position changes, you can use the Tasker script AC6SL's created, available in this repository in [tasker-script.tsk.xml](tasker-script.tsk.xml).
 
