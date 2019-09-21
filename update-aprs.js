@@ -4,12 +4,12 @@ var url = 'http://www.lothlorien.com/post-aprs.php';
 
 // Configure these for your callsign, SSID, passcode, and optional status message.
 var callsign = 'KF6GPE-9'; // Replace with your call & SSID
-var passcode = '24230';       // Replace with your passcode
+var passcode = '-1';       // Replace with your passcode
 
 // Replace the following with an optional status string.
 var info = 'Internet | @kf6gpe / kf6gpe.org';
 
-
+var symbol = 'p/';
 
 // 
 // Remainder of script follows
@@ -19,6 +19,7 @@ var locationString = global('LOC');
 // Uncomment the following line and comment out the previous line to test in node.js.
 // var locationString = '37.17680931,-122.14647146';
 
+// Take these from Tasker eventually
 var latitude = parseFloat(locationString.split(',')[0]);
 var longitude = parseFloat(locationString.split(',')[1]);
 
@@ -47,9 +48,7 @@ var lonString = leadingLonDegDigits + Math.abs(lonDeg).toString() +
     leadingLonMinDigits + lonMin.toFixed(2) + 
     (longitude < 0 ? 'W' : 'E');
 var body = 'user ' + callsign + ' pass ' + passcode + ' vers KF6GPE-HTTP-Gateway 0.1\n' + 
-    callsign + '>APDR15,TCPIP*:=' + latString + '/' + lonString + 'p/' + info + '\n';
-
-console.log(body);
+    callsign + '>APDR15,TCPIP*:=' + latString + '/' + lonString + symbol + info + '\n';
 
 
 // Do the POST to our gateway server
